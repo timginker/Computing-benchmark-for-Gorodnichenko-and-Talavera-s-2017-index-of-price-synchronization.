@@ -100,7 +100,3 @@ print("Benchmark value of Gorodnichenko and Talavera's (2017) index={}".format(n
     
 
 
-```python
-
-```
-
