@@ -1,6 +1,6 @@
 # Computing benchmark for Gorodnichenko and Talavera's (2017) index of price synchronization.
 
-In the following code snippet, we demonstrate our method of computing the benchmark for Gorodnichenko and Talavera's (2017) index of price synchronization under the null hypothesis of no coordination (i.e. independence) between the stores. We calculate the benchmark as follows. We use the fact that Gorodnichenko and Talavera’s (2017) index represents a scaled sum of binary variables indicating the price change of good i at time t in store s. Thus, under the null hypothesis of no coordination, the expectation of the index is completely characterized by the probability of a price change for each good in each store, which can be proxied by the associated frequencies. 
+In the following code snippet, we demonstrate our method of computing the benchmark for Gorodnichenko and Talavera's (2017) index of price synchronization under the null hypothesis of no coordination (i.e. independence) between the stores. We calculate the benchmark as follows. We use the fact that Gorodnichenko and Talavera’s (2017) index represents a scaled sum of binary variables indicating the price change of good $i$ at time $t$ in store $s$. Thus, under the null hypothesis of no coordination, the expectation of the index is completely characterized by the probability of a price change for each good in each store, which can be proxied by the associated frequencies. 
 
 When the number of stores is small, calculating the benchmark is straightforward and can be done analytically. For example, consider a scenario with only three stores. Let’s assume (w.l.o.g.) that the probabilities of price change for some product in a store $j$ ($j=1,2,3$) are given by $p_{1}=0.1, p_{2}=0.2, p_{3}=0.3$. In this case, the benchmark can be computed as follows:
 
@@ -85,7 +85,7 @@ print("Benchmark value of Gorodnichenko and Talavera's (2017) index={}".format(n
     Benchmark value of Gorodnichenko and Talavera's (2017) index=0.105
     
 
-As we can observe, the numerical estimate is reasonably accurate. When dealing with a large number of stores, analytical computation of the benchmark becomes challenging, making numerical methods particularly useful.
+As we can observe, the numerical estimate is reasonably accurate. However, when dealing with a large number of stores, analytical computation of the benchmark becomes challenging, making numerical methods particularly useful.
 
 The function’s arguments can be easily adjusted to provide numerical estimates for any number of stores and looped over different products, as demonstrated in the code snippet below:
 
