@@ -36,7 +36,7 @@ We can also compute the benchmark numerically using the following function:
 def benchmark(p,rep,n,seed=123456):
     """
     This function computes  the benchmark for Gorodnichenko and Talavera's (2017) index of price 
-    synchronization under the null hypothesis of of no coordination (i.e. independence) between the stores.
+    synchronization under the null hypothesis of no coordination (i.e. independence) between the stores.
     
     Arguments:
     
