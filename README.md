@@ -43,6 +43,7 @@ def benchmark(p,rep,n,seed=123456):
     p - list of probabilities of price change in store j
     rep - number of replications
     n - length of the simulated sample
+    seed - random seed, set to 123456 by default
     
     Value:
     
