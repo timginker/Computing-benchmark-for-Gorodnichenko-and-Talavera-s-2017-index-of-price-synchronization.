@@ -16,9 +16,9 @@ p1=0.1 # probability of a price change in store 1
 p2=0.2 # probability of a price change in store 2
 p3=0.3 # probability of a price change in store 3
 
-ps0=(p1*(1-p2)*(1-p3)+p2*(1-p1)*(1-p3)+p3*(1-p1)*(1-p2))/(1-(1-p1)*(1-p2)*(1-p3)) # There is a single price change (the index takes the value of 0)
-ps12=(p1*p2*(1-p3)+p1*p3*(1-p2)+p3*p2*(1-p1))/(1-(1-p1)*(1-p2)*(1-p3)) # There is a price change in two stores at the same time (the index takes the value of 0.5)
-ps1=(p1*p2*p3)/(1-(1-p1)*(1-p2)*(1-p3)) # The price has changed in all stores at the same time (the index takes the value of 1)
+ps0=(p1*(1-p2)*(1-p3)+p2*(1-p1)*(1-p3)+p3*(1-p1)*(1-p2))/(1-(1-p1)*(1-p2)*(1-p3)) # conditional probability of a single price change conditional on at least one price change  (the index takes the value of 0)
+ps12=(p1*p2*(1-p3)+p1*p3*(1-p2)+p3*p2*(1-p1))/(1-(1-p1)*(1-p2)*(1-p3)) # conditional probability of a price change in two stores at the same time conditional on at least one price change (the index takes the value of 0.5)
+ps1=(p1*p2*p3)/(1-(1-p1)*(1-p2)*(1-p3)) # conditional probability of a price change in all stores at the same time conditional on at least one price change (the index takes the value of 1)
 
 # Conditional expectation of the index at time t
 E_st=0.5*(p1*p2*(1-p3)+p1*p3*(1-p2)+p3*p2*(1-p1))/(1-(1-p1)*(1-p2)*(1-p3))+(p1*p2*p3)/(1-(1-p1)*(1-p2)*(1-p3)) 
