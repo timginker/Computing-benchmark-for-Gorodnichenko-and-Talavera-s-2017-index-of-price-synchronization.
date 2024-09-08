@@ -1,8 +1,8 @@
 # Computing benchmark for Gorodnichenko and Talavera's (2017) index of price synchronization.
 
-In the following code snippet, we demonstrate our method of computing the benchmark for Gorodnichenko and Talavera's (2017) index of price synchronization under the null hypothesis of of no coordination (i.e. independence) between the stores. We calculate the benchmark as follows. We use the fact that Gorodnichenko and Talavera’s (2017) index represents a scaled sum of binary variables indicating the price change of good i at time t in store s. Thus, under the null hypothesis of no coordination, the expectation of the index is completely characterized by the probability of a price change for each good in each store, which can be proxied by the associated frequencies. 
+In the following code snippet, we demonstrate our method of computing the benchmark for Gorodnichenko and Talavera's (2017) index of price synchronization under the null hypothesis of no coordination (i.e. independence) between the stores. We calculate the benchmark as follows. We use the fact that Gorodnichenko and Talavera’s (2017) index represents a scaled sum of binary variables indicating the price change of good i at time t in store s. Thus, under the null hypothesis of no coordination, the expectation of the index is completely characterized by the probability of a price change for each good in each store, which can be proxied by the associated frequencies. 
 
-When the number of stores is small, calculating the benchmark is straightforward and can be done analytically. For example, consider a scenario with only three stores. Let’s assume (w.l.o.g.) that the probabilities of price change for some product in store $j$ ($j=1,2,3$) are given by $p_{1}=0.1, p_{2}=0.2, p_{3}=0.3$. In this case, the benchmark can be computed as follows:
+When the number of stores is small, calculating the benchmark is straightforward and can be done analytically. For example, consider a scenario with only three stores. Let’s assume (w.l.o.g.) that the probabilities of price change for some product in a store $j$ ($j=1,2,3$) are given by $p_{1}=0.1, p_{2}=0.2, p_{3}=0.3$. In this case, the benchmark can be computed as follows:
 
 
 ```python
@@ -35,7 +35,7 @@ We can also compute the benchmark numerically using the following function:
 ```python
 def benchmark(p,rep,n,seed=123456):
     """
-    This functions computes  the benchmark for Gorodnichenko and Talavera's (2017) index of price 
+    This function computes  the benchmark for Gorodnichenko and Talavera's (2017) index of price 
     synchronization under the null hypothesis of of no coordination (i.e. independence) between the stores.
     
     Arguments:
@@ -90,7 +90,7 @@ The function’s arguments can be easily adjusted to provide numerical estimates
 
 
 ```python
-p=np.full((10, ), 0.1) # ten stores with equal probabilty of price change
+p=np.full((10, ), 0.1) # ten stores with equal probability of price change
 print("Benchmark value of Gorodnichenko and Talavera's (2017) index={}".format(np.round(benchmark(p=p,
                                                                                                   n=1000,rep=1000),3)))
 ```
