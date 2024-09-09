@@ -98,6 +98,9 @@ print("Benchmark value of Gorodnichenko and Talavera's (2017) index={}".format(n
 
     Benchmark value of Gorodnichenko and Talavera's (2017) index=0.059
 
-    
+
+# References
+
+Gorodnichenko, Y. and O. Talavera (2017), “Price Setting in Online Markets,” American Economic Review 107(1), 249–282.
 
 
