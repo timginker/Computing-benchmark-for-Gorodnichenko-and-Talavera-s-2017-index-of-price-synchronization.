@@ -85,7 +85,7 @@ print("Benchmark value of Gorodnichenko and Talavera's (2017) index={}".format(n
     Benchmark value of Gorodnichenko and Talavera's (2017) index=0.105
     
 
-As we can observe, the numerical estimate is reasonably accurate. However, when dealing with a large number of stores, analytical computation of the benchmark becomes challenging, making numerical methods particularly useful.
+As we can observe, the numerical estimate is reasonably accurate. Moreover, when dealing with a large number of stores, analytical computation of the benchmark becomes challenging, making numerical methods particularly useful.
 
 The function’s arguments can be easily adjusted to provide numerical estimates for any number of stores and looped over different products, as demonstrated in the code snippet below:
 
