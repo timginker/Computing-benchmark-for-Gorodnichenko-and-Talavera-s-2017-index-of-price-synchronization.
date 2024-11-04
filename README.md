@@ -101,7 +101,7 @@ print("Benchmark value of Gorodnichenko and Talavera's (2017) index={}".format(n
 
 # References
 
-GInker, T., Ilek, A., and Snir, A. (2024), “Rigidity and Synchronization: Analyzing Online and Offline Price Dynamics”. \href{[https://www.sciencedirect.com/science/article/abs/pii/S0165176516304840](http://dx.doi.org/10.13140/RG.2.2.35045.20962)}{paper link}
+GInker, T., Ilek, A., and Snir, A. (2024), “Rigidity and Synchronization: Analyzing Online and Offline Price Dynamics”. [paper link]([http://example.com](https://www.sciencedirect.com/science/article/abs/pii/S0165176516304840](http://dx.doi.org/10.13140/RG.2.2.35045.20962))
 
 Gorodnichenko, Y. and O. Talavera (2017), “Price Setting in Online Markets,” American Economic Review 107(1), 249–282.
 
